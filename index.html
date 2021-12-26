@@ -12,8 +12,9 @@
 </head>
 <body>
   <div class="nav__container">
-    <nav class="nav" style="display: none;">
-      <ul class="desktop__nav">
+    <!-- <nav class="nav" style="display: none;"> -->
+    <nav class="nav">
+      <ul class="desktop__nav"> <!-- add hide -->
         <li><a href="#" class="nav__link--logo"></a></li>
         <li><a href="#">Store</a></li>
         <li><a href="#">Mac</a></li>
@@ -32,7 +33,7 @@
 
     <!-- end of navigation -->
 
-    <div class="search__container">
+    <div class="search__container hide">
       <div class="nav__link--search"></div>
       <div class="nav__search--bar">
         <form action="">
@@ -54,7 +55,8 @@
     </div> <!-- search__container -->
   </div> <!-- nav__container -->
 
-  <div class="overlay show"></div>
+  <!-- <div class="overlay show"></div> -->
+  <div class="overlay"></div>
   <script src="app.js"></script>
 </body>
 </html>
