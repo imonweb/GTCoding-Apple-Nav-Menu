@@ -11,10 +11,30 @@
   <title>Apple Nav Menu</title>
 </head>
 <body>
-  <div class="nav__container">
+  <div class="nav__container active">
     <!-- <nav class="nav" style="display: none;"> -->
     <nav class="nav">
-      <ul class="desktop__nav"> <!-- add hide -->
+
+      <!-- mobile nav -->
+      <ul class="mobile__nav">
+        <li>
+          <div class="menu">
+            <div class="menu__icon">
+              <span class="line__1"></span>
+              <span class="line__2"></span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="nav__link--logo"></a>
+        </li>
+        <li>
+          <a href="#" class="nav__link--bag"></a>
+        </li>
+      </ul>
+
+      <!-- Desktop nav -->
+      <ul class="desktop__nav"> <!-- hide on mobile viewport and search -->
         <li><a href="#" class="nav__link--logo"></a></li>
         <li><a href="#">Store</a></li>
         <li><a href="#">Mac</a></li>
@@ -57,6 +77,8 @@
 
   <!-- <div class="overlay show"></div> -->
   <div class="overlay"></div>
+
+  <div class="hero"></div>
   <script src="app.js"></script>
 </body>
 </html>
