@@ -1,0 +1,135 @@
+
+.mobile__search-container {
+  position: relative;
+  padding: 0px 16px;
+  // margin-top: 10px;
+  margin-top: -30px;
+  border-bottom: 1px solid #616161;
+  display: flex;
+  padding-bottom: 16px;
+  align-items: center;
+  transform: rotateX(90deg);
+  opacity: 0;
+  transition: all 600ms ease;
+
+  input {
+    width: 100%;
+    padding: 12px 36px;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    background: #1b1b1b;
+    border: 0;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  .nav__link--search {
+    position: absolute;
+    left: 24px;
+    opacity: .5;
+    background-size: 15px;
+  }
+
+  .cancel-btn {
+    color: #2997ff;
+    font-size: 17px;
+    // padding: 0px 16px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 0px;
+    overflow: hidden;
+    transition: aall 400ms ease;
+  }
+
+  .nav__search--bar {
+    flex: 1;
+
+    &.active + .cancel-btn {
+      padding: 0px 16px;
+      width: 74px;
+    }
+
+    &.active ~ .nav__quick--links {
+      top: 80px;
+      opacity: 1;
+      pointer-events: auto;
+      transition-delay: 40ms;
+    }
+  }
+
+  .nav__quick--links {
+    // display: none;
+    position: absolute;
+    // top: 80px;
+    left: 0px;
+    right: 0px;
+    padding: 0px 32px;
+    opacity: 0;
+    pointer-events: none;
+    top: 10px;
+    transition: all 400ms ease;
+
+    ul {
+      list-style: none;
+
+      li {
+
+        a {
+          padding: 16px 0px;
+          display: inline-block;
+          text-decoration: none;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 400;
+          border-bottom: 1px solid #616161;
+          width: 100%;
+
+          &:hover {
+            color: #2997ff;
+          }
+        }
+      }
+    }
+
+    h2 {
+      color: #86868b;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+}
+
+/* Nav Move Up */
+
+.nav__container nav.move-up {
+    margin-top: -40px;
+}
+
+ 
+
+/*  Desktop Nav move down */
+nav .desktop__nav.move-down {
+
+  li {
+    opacity: 0;
+    pointer-events: none;
+
+    &:first-child {
+      margin-top: 150px;
+    }
+  }
+}
+
+
+.nav__container.active .mobile__search-container {
+  transform: rotateX(0deg);
+  margin-top: 10px;
+  opacity: 1;
+}
+
+/*  Nav Animation */
+.nav__container nav {
+  transition: all 400ms ease;
+}
