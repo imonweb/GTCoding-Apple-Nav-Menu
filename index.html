@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Apple Nav Menu</title>
@@ -13,7 +12,7 @@
 <body>
   <div class="nav__container active">
     <!-- <nav class="nav" style="display: none;"> -->
-    <nav class="nav">
+    <nav class="nav move__up">
 
       <!-- mobile nav -->
       <ul class="mobile__nav">
@@ -34,7 +33,7 @@
       </ul>
 
       <!-- Desktop nav -->
-      <ul class="desktop__nav"> <!-- hide on mobile viewport and search -->
+      <ul class="desktop__nav move-down"> <!-- hide on mobile viewport and search -->
         <li><a href="#" class="nav__link--logo"></a></li>
         <li><a href="#">Store</a></li>
         <li><a href="#">Mac</a></li>
@@ -73,7 +72,36 @@
         </ul>
       </div>
     </div> <!-- search__container -->
+
+    <!-- mobile-search-start -->
+    <div class="mobile__search-container">
+      <div class="nav__link--search"></div>
+      <div class="nav__search--bar active">
+        <form action="">
+          <input type="text" placeholder="Search apple.com">
+        </form>
+      </div>
+      <span class="cancel-btn">Cancel</span>
+    
+      <div class="nav__quick--links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Gifts</a></li>
+          <li><a href="#">Visiting an Apple Store FAQ</a></li>
+          <li><a href="#">AirPods</a></li>
+          <li><a href="#">AirTags</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+    </div> <!-- search__container -->
+    <!-- mobile-search-end -->
+
+
+
+
   </div> <!-- nav__container -->
+
+  
 
   <!-- <div class="overlay show"></div> -->
   <div class="overlay"></div>
